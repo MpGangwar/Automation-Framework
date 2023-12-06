@@ -1,0 +1,3 @@
+10:59:22.373 [main]INFO  Class class TestCases.LoginPageTest Method logoImageTest - Logo of the application is display 
+10:59:40.264 [main]INFO  Class class TestCases.LoginPageTest Method loginPageTitileTest - login page title is display
+11:00:34.660 [main]INFO  Class class TestCases.LoginPageTest Method loginTest - clicked on :Proxy element for: DefaultElementLocator 'By.xpath: //button[text()=' Login ']'

@@ -1,0 +1,29 @@
+13:12:40.237 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on element
+13:12:41.917 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on element
+13:12:41.918 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on Admin button on Home page
+13:12:45.075 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on element
+13:12:45.076 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on User Manangement Button
+13:12:45.648 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on element
+13:12:45.649 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on user button under User Manangement
+13:12:47.059 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on element
+13:12:47.061 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on Add button
+13:12:47.583 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on element
+13:12:47.585 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on User Role DropDown button
+13:12:47.682 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on element
+13:12:47.683 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Admin Role is selected
+13:12:47.929 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Data entered in to text field
+13:12:47.930 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Employee name is entered 
+13:12:49.148 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on element
+13:12:49.149 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Employee name is is selected
+13:12:49.248 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on element
+13:12:49.249 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on status DropDown button
+13:12:49.349 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on element
+13:12:49.350 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Enable status is selected
+13:12:54.511 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - user name is entered 
+13:12:54.700 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Data entered in to text field
+13:12:54.700 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Password is enetered 
+13:12:54.924 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Data entered in to text field
+13:12:54.924 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Confirm Password is enetered 
+13:12:55.029 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on element
+13:12:55.029 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - Clicked on save button 
+13:12:55.029 [main]INFO  Class class TestCases.AdminPageTest Method userManangementButtonTest - form is submitted successfully

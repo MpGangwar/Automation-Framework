@@ -1,0 +1,2 @@
+12:25:19.943 [main]INFO  Class class TestCases.LoginPageTest Method loginPageTitileTest - login page title is display
+12:25:30.811 [main]INFO  Class class TestCases.LoginPageTest Method loginTest - clicked on element
