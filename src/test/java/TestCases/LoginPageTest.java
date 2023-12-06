@@ -67,6 +67,16 @@ public class LoginPageTest extends TestBase{
 		
 	}
 	
+	@Test(priority=2)
+	public void loginTest1() throws InterruptedException
+	{
+		 lp=new LoginPage();
+		homePage=lp.login(prop.getProperty("username"), prop.getProperty("password"));
+//		test.info("Clicked on Login button");
+//		log.info("Clicked on Login button");
+		
+	}
+	
 	
 	
 	
