@@ -23,15 +23,17 @@ import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+import Utilities.ReadXLSData;
 import Utilities.WebEventListener;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TestBase {
+public class TestBase extends ReadXLSData {
 	
 	public static WebDriver driver;
 	public static Properties prop;
@@ -40,7 +42,7 @@ public class TestBase {
 	public static Logger log;
 	public static ExtentReports extent;
 	public static ExtentTest test;
-	
+
 	
 	
 	
@@ -58,7 +60,9 @@ public class TestBase {
 	        if (result.getStatus() == ITestResult.FAILURE) {
 	            test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + "FAILED", ExtentColor.RED));
 	            test.log(Status.FAIL, "Reson for Fail: "+result.getThrowable());
-	            
+	            TakesScreenshot takeScreenshot=(TakesScreenshot )driver;
+	    		String base64Code=takeScreenshot.getScreenshotAs(OutputType.BASE64);
+	            test.fail(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code).build());
 	            
 	        } else if (result.getStatus() == ITestResult.SUCCESS) {
 	            test.log(Status.PASS, MarkupHelper.createLabel(result.getName() + "PASSED", ExtentColor.GREEN));
@@ -136,6 +140,7 @@ public class TestBase {
 			 extent = new ExtentReports();
 			ExtentSparkReporter spark = new ExtentSparkReporter("./ExtentReports/Spark.html");
 			extent.attachReporter(spark);
+//			test.addScreenCaptureFromBase64String(base64Code);
 		}
 		
 		@AfterTest
@@ -145,4 +150,6 @@ public class TestBase {
 			extent.flush();
 		}
 
+		
+		
 }

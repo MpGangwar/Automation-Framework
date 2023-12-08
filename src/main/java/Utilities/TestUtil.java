@@ -25,6 +25,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import Base.TestBase;
 
 public class TestUtil extends TestBase {
+	
+	
+	
+	
     
 	
 	public void switchToFrame()
@@ -71,12 +75,17 @@ public class TestUtil extends TestBase {
 		
 	}
 
-	public static void takeScreenshotAtEndOfTest() throws IOException {
+	public static String takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
+		return currentDir ; 
+		
+
+		
 	}
 
+	
 
 
 	public WebElement waitForVisibilityOfElement(WebElement element,long waitTimeSecond)
@@ -143,6 +152,8 @@ public class TestUtil extends TestBase {
 		public void acceptAlert(WebDriver alert)
 		{
 			driver.switchTo().alert().accept();
+			test.info("CLicked on Alert's OK button");
+			log.info("CLicked on Alert's OK button");
 		}
 
 		// FOr MouseHover action
@@ -151,6 +162,8 @@ public class TestUtil extends TestBase {
 		{
 			Actions a=new Actions(driver);
 			a.moveToElement(element).click().perform();
+			test.info("Mouse Hover to the Element");
+			log.info("Mouse Hover to the Element");
 			
 			
 					

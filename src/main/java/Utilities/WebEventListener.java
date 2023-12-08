@@ -109,8 +109,10 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		try {
 			TestUtil.takeScreenshotAtEndOfTest();
 		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 	}
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {

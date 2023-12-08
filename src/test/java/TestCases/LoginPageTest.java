@@ -1,21 +1,14 @@
 package TestCases;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
 import Base.TestBase;
-import Pages.HomePage;
 import Pages.LoginPage;
 
 public class LoginPageTest extends TestBase{
 	LoginPage lp;
-	HomePage homePage;
+	
 	 
 	
 	
@@ -27,14 +20,7 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	
-//	@BeforeMethod
-//	public void setUp() throws InterruptedException
-//	{
-//		
-//		initialization();
-//		 lp=new LoginPage();
-//	}
-	
+
 	@Test(priority=1)
 	public void loginPageTitileTest() throws InterruptedException
 	{
@@ -57,27 +43,34 @@ public class LoginPageTest extends TestBase{
 		log.info("Logo of the application is display ");
 	}
 	
-	@Test(priority=1)
-	public void loginTest() throws InterruptedException
-	{
-		 lp=new LoginPage();
-		homePage=lp.login(prop.getProperty("username"), prop.getProperty("password"));
-//		test.info("Clicked on Login button");
-//		log.info("Clicked on Login button");
-		
-	}
-	
-	
-	
-	
-	
-	
-//	@AfterMethod
-//	public void tearDown()
+//	@Test(priority=2)
+//	public void loginTest() throws InterruptedException
 //	{
-//		driver.quit();
+//		 lp=new LoginPage();
+//		homePage=lp.login(prop.getProperty("username"), prop.getProperty("password"));
+//
+//		
 //	}
-//	
 	
 
-}
+	@Test(dataProvider="ExcelData")
+	public void loginTest(String userame, String password) throws InterruptedException
+	{
+		lp=new LoginPage();
+	
+		lp.login(userame, password);
+		
+		
+	
+
+	}}
+	
+	
+	
+	
+	
+	
+
+	
+
+

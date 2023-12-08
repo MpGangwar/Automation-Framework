@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.AdminPageTest">
+      <class name="TestCases.LoginPageTest">
         <methods>
           <include name="getTestResult"/>
+          <include name="loginTest" invocation-numbers="1 2 3 4"/>
           <include name="beforeTest"/>
           <include name="setup"/>
-          <include name="userManangementButtonTest"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- TestCases.AdminPageTest -->
+      </class> <!-- TestCases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
